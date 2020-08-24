@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use(express.json({extend:true}))
 
-const port=process.env.port||4000
+const port=process.env.PORT||4000;
 
 app.use('/api/v1/users',require('./Rutas/Usuarios'));
 app.use('/api/v1/auth',require('./Rutas/auth'));
